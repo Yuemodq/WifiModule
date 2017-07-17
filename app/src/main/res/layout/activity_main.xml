@@ -13,6 +13,7 @@
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:background="#33000000"
         android:padding="5dp">
 
         <TextView
@@ -24,13 +25,26 @@
             android:text="开启WiFi连接"/>
 
         <Switch
-            android:textOn="xx"
-            android:textOff="yy"
+            android:hapticFeedbackEnabled="true"
             android:thumb="@drawable/thumb"
             android:track="@drawable/track"
+            android:trackTintMode="add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
+
+    <TextView
+        android:text="@string/scanning_wifi"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_wifi"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

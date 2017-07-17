@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/colorAccent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:drawable="@mipmap/ic_launcher" android:state_pressed="true">
+                <item android:drawable="@mipmap/ic_launcher" android:state_pressed="false">
+                </item>
+            </item>
+        </selector>
+    </item>
+</ripple>
