@@ -5,9 +5,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Environment;
-import android.os.Looper;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -84,16 +82,16 @@ public class CrashHandle implements Thread.UncaughtExceptionHandler {
         }
         collectDeviceInfo(mContext);
         addCustomInfo();
-        new Thread() {
-            @Override
-            public void run() {
-    
-                Looper.prepare();
-                Toast.makeText(mContext, "客官，你的程序挂掉了...", Toast.LENGTH_SHORT).show();
-                Looper.loop();
-                
-            }
-        }.start();
+//        new Thread() {
+//            @Override
+//            public void run() {
+//
+//                Looper.prepare();
+//                Toast.makeText(mContext, "客官，你的程序挂掉了...", Toast.LENGTH_SHORT).show();
+//                Looper.loop();
+//
+//            }
+//        }.start();
         saveCrashLog2File(e);
         return true;
     }
