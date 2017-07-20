@@ -33,7 +33,7 @@ public class SettingWifiHolder extends RecyclerView.ViewHolder {
     
     public SettingWifiHolder(View itemView) {
         super(itemView);
-        ButterKnife.bind(itemView);
+        ButterKnife.bind(this, itemView);
     }
 }
 

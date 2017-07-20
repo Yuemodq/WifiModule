@@ -16,16 +16,20 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity implements SettingWifiAdapter.OnWifiItemClickListener, IMainView {
     
     @BindView(R.id.rv_wifi)
-    private RecyclerView mRvWifi;
+    RecyclerView mRvWifi;
     
-    private MainPresenter mPresenter;
+    MainPresenter mPresenter;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        
+        init();
+    }
+    
+    private void init() {
+        mPresenter = new MainPresenter();
     }
     
     @Override

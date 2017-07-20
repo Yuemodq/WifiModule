@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.xw.wifimodule.R;
 import com.xw.wifimodule.adapter.holder.SettingWifiHolder;
-import com.xw.wifimodule.model.AssessPoint;
+import com.xw.wifimodule.model.AccessPoint;
 import com.xw.wifimodule.util.PreConditionCheck;
 
 import java.util.List;
@@ -26,7 +26,7 @@ public class SettingWifiAdapter extends RecyclerView.Adapter<SettingWifiHolder> 
     
     private Context mContext;
     
-    private List<AssessPoint> mAssessPoints;
+    private List<AccessPoint> mAssessPoints;
     
     private OnWifiItemClickListener mWifiItemClickListener;
     
