@@ -27,16 +27,16 @@ public class AccessPoint implements Comparable<AccessPoint> {
     /**
      * 无密码
      */
-    static final int SECURITY_NONE = 0;
+    public static final int SECURITY_NONE = 0;
     
     //wep
-    static final int SECURITY_WEP = 1;
+    public static final int SECURITY_WEP = 1;
     
     //wpa-psk,wpa2-psk
-    static final int SECURITY_PSK = 2;
+    public static final int SECURITY_PSK = 2;
     
     //eap
-    static final int SECURITY_EAP = 3;
+    public static final int SECURITY_EAP = 3;
     
     public static final int INVALID_NETWORK_ID = -1;
     

@@ -1,7 +1,10 @@
 package com.xw.wifimodule.presenter;
 
+import com.xw.wifimodule.model.AccessPoint;
 import com.xw.wifimodule.model.IWifiModel;
 import com.xw.wifimodule.view.IMainView;
+
+import java.util.List;
 
 /**
  * 类描述：
@@ -24,7 +27,22 @@ public class MainPresenter {
     public void connectWifi() {
         
     }
-    
-    
+
+    public List<AccessPoint> updateWifiData() {
+        return mWifiModel.updateAssessPoint();
+    }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,7 @@
 package com.xw.wifimodule.model;
 
+import java.util.List;
+
 /**
  * 类描述：
  * 项目：WifiModule
@@ -9,4 +11,7 @@ package com.xw.wifimodule.model;
  */
 
 public interface IWifiModel {
+
+    List<AccessPoint> updateAssessPoint();
+
 }
